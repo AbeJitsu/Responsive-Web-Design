@@ -71,3 +71,57 @@ body {
 /* ============================================ */
 /* YOUR PROJECT STYLES GO BELOW */
 /* ============================================ */
+
+/* Page Layout */
+body {
+    padding: var(--spacing-lg);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Heading Styles */
+h1 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-lg);
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+/* Browser List Styles */
+.browser-list {
+    padding: 0;
+}
+
+.browser-list dt {
+    color: var(--color-secondary);
+    font-weight: bold;
+    margin-top: var(--spacing-md);
+    font-size: 1.1rem;
+}
+
+.browser-list dt:first-child {
+    margin-top: 0;
+}
+
+.browser-list dd {
+    margin-left: var(--spacing-md);
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--color-gray-100);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    body {
+        padding: var(--spacing-md);
+    }
+
+    .browser-list li {
+        padding: var(--spacing-sm);
+    }
+}
